@@ -4,10 +4,52 @@ An enterprise-grade Full-Stack Expense Voucher Creation, Approval, and Reimburse
 
 ---
 
+## 📸 Application Screenshots
+
+### 1. 🔐 Sign In & Role Authentication
+*Minimalist dark screen with ambient moving background particle animation and 1-click credential prefill.*
+
+![Sign In Screen](./screenshots/01-login-screen.png)
+
+---
+
+### 2. 👤 Employee Portal & Voucher Workflow
+*Real-time metrics tracking total claims, drafts, pending approvals, approved vouchers, and sum claimed.*
+
+![Employee Portal](./screenshots/02-employee-dashboard.png)
+
+#### 📝 Create Expense Voucher Form
+![Create Voucher Modal](./screenshots/03-create-voucher.png)
+
+#### ✍️ Digital Signature Pad (Canvas Draw & Upload)
+![Digital Signature Canvas](./screenshots/04-signature-canvas.png)
+
+---
+
+### 3. 🛡️ Director Approval Hub
+*Executive queue showing pending employee requests with instant review tools.*
+
+![Director Approval Hub](./screenshots/05-director-approval-hub.png)
+
+#### ✒️ Director Digital Authorization Signature Modal
+![Director Approval Modal](./screenshots/06-approve-modal.png)
+
+---
+
+### 4. 🏛️ Accounts & Reimbursement Portal
+*Organization-wide financial summary and approved claim settlement monitoring.*
+
+![Accounts Dashboard](./screenshots/07-accounts-dashboard.png)
+
+#### 📄 Voucher Details & Printable Receipt Format
+![Voucher Details](./screenshots/08-voucher-details.png)
+
+---
+
 ## 🌟 Features Overview
 
 ### 1. 👤 Employee Module
-- **Dashboard Stats**: Real-time breakdown of Total Claims, Drafts, Pending Approvals, Approved Vouchers, Rejected Vouchers, and Total Amount Claimed.
+- **Dashboard Stats**: Real-time breakdown of Total Claims, Drafts, Pending Approvals, Approved Vouchers, Rejected Vouchers, and Total Amount Claimed (in ₹).
 - **Voucher Creation & Editing**: Create vouchers with mandatory validation (Department, Expense Title, Expense Date, Amount > 0). Save as Draft or submit for approval.
 - **Digital Signatures**: Sign directly on an interactive HTML5 Canvas pad or upload signature images (PNG, JPG, SVG).
 - **Draft Workflow**: Full edit and delete privileges for Draft vouchers. Submitted vouchers instantly become read-only.
@@ -31,14 +73,14 @@ An enterprise-grade Full-Stack Expense Voucher Creation, Approval, and Reimburse
   - **Expense Category**: Travel, Meals, Software & Tools, Office Supplies, Client Entertainment, etc.
   - **Status**: Draft, Submitted / Pending Approval, Approved, Rejected
   - **Date Range**: Expense date range filtering
-  - **Amount Range**: Min and Max claim amount boundaries
+  - **Amount Range**: Min and Max claim amount boundaries (in ₹)
   - **Sorting**: By Created Date, Expense Date, Amount, Voucher # (Ascending / Descending)
 
 ---
 
 ## 🏗️ Technology Stack
 
-- **Frontend**: React (Vite), Lucide Icons, Glassmorphic CSS design system, Custom HTML5 Canvas Signature Pad.
+- **Frontend**: React (Vite), Lucide Icons, Minimalist Black & White CSS design system with moving canvas background animation.
 - **Backend**: Node.js, Express.js RESTful API, Multer for multipart image signature uploads.
 - **Database**: SQLite (via `better-sqlite3` with WAL mode & foreign key constraints).
 - **Authentication**: JWT (JSON Web Tokens) with role-based access control middleware (`EMPLOYEE`, `DIRECTOR`, `ACCOUNTS`).
@@ -72,8 +114,6 @@ Open your browser and navigate to `http://localhost:3000`.
 ---
 
 ## 🔑 Demo Account Credentials
-
-For evaluator testing convenience, the top navigation bar features a **"Quick Role Switcher"** and the Login page includes **1-Click Demo Buttons**:
 
 | Role | Email | Password | Primary Permissions |
 | :--- | :--- | :--- | :--- |
