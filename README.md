@@ -4,69 +4,69 @@ An enterprise-grade Full-Stack Expense Voucher Creation, Approval, and Reimburse
 
 ---
 
-## 📸 Application Screenshots
+## Application Screenshots
 
-### 1. 🔐 Sign In & Role Authentication
+### 1. Sign In & Role Authentication
 *Minimalist dark screen with ambient moving background particle animation and 1-click credential prefill.*
 
 ![Sign In Screen](./screenshots/01-login-screen.png)
 
 ---
 
-### 2. 👤 Employee Portal & Voucher Workflow
+### 2. Employee Portal & Voucher Workflow
 *Real-time metrics tracking total claims, drafts, pending approvals, approved vouchers, and sum claimed.*
 
 ![Employee Portal](./screenshots/02-employee-dashboard.png)
 
-#### 📝 Create Expense Voucher Form
+#### Create Expense Voucher Form
 ![Create Voucher Modal](./screenshots/03-create-voucher.png)
 
-#### ✍️ Digital Signature Pad (Canvas Draw & Upload)
+#### Digital Signature Pad (Canvas Draw & Upload)
 ![Digital Signature Canvas](./screenshots/04-signature-canvas.png)
 
 ---
 
-### 3. 🛡️ Director Approval Hub
+### 3. Director Approval Hub
 *Executive queue showing pending employee requests with instant review tools.*
 
 ![Director Approval Hub](./screenshots/05-director-approval-hub.png)
 
-#### ✒️ Director Digital Authorization Signature Modal
+#### Director Digital Authorization Signature Modal
 ![Director Approval Modal](./screenshots/06-approve-modal.png)
 
 ---
 
-### 4. 🏛️ Accounts & Reimbursement Portal
+### 4. Accounts & Reimbursement Portal
 *Organization-wide financial summary and approved claim settlement monitoring.*
 
 ![Accounts Dashboard](./screenshots/07-accounts-dashboard.png)
 
-#### 📄 Voucher Details & Printable Receipt Format
+#### Voucher Details & Printable Receipt Format
 ![Voucher Details](./screenshots/08-voucher-details.png)
 
 ---
 
-## 🌟 Features Overview
+## Features Overview
 
-### 1. 👤 Employee Module
+### 1. Employee Module
 - **Dashboard Stats**: Real-time breakdown of Total Claims, Drafts, Pending Approvals, Approved Vouchers, Rejected Vouchers, and Total Amount Claimed (in ₹).
 - **Voucher Creation & Editing**: Create vouchers with mandatory validation (Department, Expense Title, Expense Date, Amount > 0). Save as Draft or submit for approval.
 - **Digital Signatures**: Sign directly on an interactive HTML5 Canvas pad or upload signature images (PNG, JPG, SVG).
 - **Draft Workflow**: Full edit and delete privileges for Draft vouchers. Submitted vouchers instantly become read-only.
 - **Status Tracking**: Track approval progress and view Director rejection remarks if rejected.
 
-### 2. 🛡️ Director (Admin) Module
+### 2. Director (Admin) Module
 - **Executive Dashboard**: Monitor Pending Approval Count, Total Pending Amount, Approved Today, and Rejected Today.
 - **Approval Queue**: Dedicated interface to review pending employee expense requests.
 - **Approval Action**: Digitally sign vouchers to grant reimbursement approval (status updates to `APPROVED` with approval date).
 - **Rejection Action**: Reject vouchers with mandatory rejection reason remarks (status updates to `REJECTED`).
 
-### 3. 🏛️ Accounts Team Module
+### 3. Accounts Team Module
 - **Financial Monitoring**: Organization-wide view of all expense claims and total approved expense reimbursement budget.
 - **Audit & Compliance**: Access employee and director digital signatures, expense descriptions, department tags, and audit timestamps.
 - **Print & PDF Export**: One-click printable voucher receipt layout formatted for record-keeping and auditing.
 
-### 4. 🔍 Search, Filter & Sort (Bonus Feature)
+### 4. Search, Filter & Sort (Bonus Feature)
 - Filter vouchers by:
   - **Keywords**: Voucher Number, Employee Name, Expense Title
   - **Department**: Engineering, Executive, Finance, Marketing, Sales, HR, Operations
@@ -78,7 +78,7 @@ An enterprise-grade Full-Stack Expense Voucher Creation, Approval, and Reimburse
 
 ---
 
-## 🏗️ Technology Stack
+## Technology Stack
 
 - **Frontend**: React (Vite), Lucide Icons, Minimalist Black & White CSS design system with moving canvas background animation.
 - **Backend**: Node.js, Express.js RESTful API, Multer for multipart image signature uploads.
@@ -87,7 +87,7 @@ An enterprise-grade Full-Stack Expense Voucher Creation, Approval, and Reimburse
 
 ---
 
-## 🚀 Quick Setup & Execution Guide
+## Quick Setup & Execution Guide
 
 ### Prerequisites
 - Node.js (v18 or higher recommended)
@@ -113,7 +113,7 @@ Open your browser and navigate to `http://localhost:3000`.
 
 ---
 
-## 🔑 Demo Account Credentials
+## Demo Account Credentials
 
 | Role | Email | Password | Primary Permissions |
 | :--- | :--- | :--- | :--- |
@@ -123,7 +123,7 @@ Open your browser and navigate to `http://localhost:3000`.
 
 ---
 
-## 🗄️ Database Schema (`schema.sql`)
+## Database Schema (`schema.sql`)
 
 ### 1. `users` Table
 ```sql
@@ -167,7 +167,7 @@ CREATE TABLE IF NOT EXISTS vouchers (
 
 ---
 
-## 📡 API Documentation
+## API Documentation
 
 ### Authentication Endpoints
 - `POST /api/auth/login` - Authenticate user & return JWT token
@@ -186,7 +186,7 @@ CREATE TABLE IF NOT EXISTS vouchers (
 
 ---
 
-## 💡 Assumptions Made During Development
+## Assumptions Made During Development
 
 1. **Voucher Numbering**: Voucher numbers follow an auto-generated format (`VCH-YYYY-0001`) initialized per year sequence.
 2. **Read-Only Lock**: Once submitted, vouchers cannot be edited by employees unless rejected or saved back as draft.
