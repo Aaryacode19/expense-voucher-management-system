@@ -7,18 +7,19 @@ An enterprise-grade Full-Stack Expense Voucher Creation, Approval, and Reimburse
 ## Application Screenshots
 
 ### 1. Sign In & Role Authentication
-*Minimalist dark screen with ambient moving background particle animation and 1-click credential prefill.*
 
 ![Sign In Screen](./screenshots/01-login-screen.png)
 
 ---
 
-### 2. Employee Portal & Voucher Workflow
-*Real-time metrics tracking total claims, drafts, pending approvals, approved vouchers, and sum claimed.*
+### 2. Employee Portal 
 
 ![Employee Portal](./screenshots/02-employee-dashboard.png)
 
-#### Create Expense Voucher Form
+#### Create new expense voucher form
+![create new expense form](./screenshots/05-director-approval-hub.png)
+
+#### Expense Voucher Form Details
 ![Create Voucher Modal](./screenshots/03-create-voucher.png)
 
 #### Export Option to PDF / Printable Receipt
@@ -27,22 +28,18 @@ An enterprise-grade Full-Stack Expense Voucher Creation, Approval, and Reimburse
 ---
 
 ### 3. Director Approval Hub
-*Executive queue showing pending employee requests with instant review tools.*
 
-![Director Approval Hub](./screenshots/05-director-approval-hub.png)
-
-#### Director Digital Authorization Signature Modal
 ![Director Approval Modal](./screenshots/06-approve-modal.png)
+
+#### Voucher Details Approve/Reject 
+![Voucher Details](./screenshots/08-voucher-details.png)
 
 ---
 
 ### 4. Accounts & Reimbursement Portal
-*Organization-wide financial summary and approved claim settlement monitoring.*
 
 ![Accounts Dashboard](./screenshots/07-accounts-dashboard.png)
 
-#### Voucher Details View
-![Voucher Details](./screenshots/08-voucher-details.png)
 
 ---
 
