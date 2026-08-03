@@ -21,8 +21,8 @@ An enterprise-grade Full-Stack Expense Voucher Creation, Approval, and Reimburse
 #### Create Expense Voucher Form
 ![Create Voucher Modal](./screenshots/03-create-voucher.png)
 
-#### Digital Signature Pad (Canvas Draw & Upload)
-![Digital Signature Canvas](./screenshots/04-signature-canvas.png)
+#### Export Option to PDF / Printable Receipt
+![Export Option to PDF](./screenshots/04-export-pdf.png)
 
 ---
 
@@ -41,7 +41,7 @@ An enterprise-grade Full-Stack Expense Voucher Creation, Approval, and Reimburse
 
 ![Accounts Dashboard](./screenshots/07-accounts-dashboard.png)
 
-#### Voucher Details & Printable Receipt Format
+#### Voucher Details View
 ![Voucher Details](./screenshots/08-voucher-details.png)
 
 ---
